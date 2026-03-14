@@ -1,0 +1,18 @@
+chunking:
+  chunk_size: 600
+  chunk_overlap: 100
+
+embedding:
+  model: "all-MiniLM-L6-v2"
+  batch_size: 32
+
+retrieval:
+  top_k: 5
+
+llm:
+  model: "gpt-4o-mini"
+  max_tokens: 1000
+  temperature: 0.2
+
+vectorstore:
+  path: "./vectorstore/faiss_index"
