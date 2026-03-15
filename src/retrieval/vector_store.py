@@ -6,8 +6,7 @@ from pathlib import Path
 
 class VectorStore:
     def __init__(self, dim: int = 384):
-        self.index = faiss.IndexFlatL2(d)
-        print("FAISS initialized with dim:", d)
+        
         self.dim = dim
         self.index = faiss.IndexFlatIP(dim)
         self.metadata = []
